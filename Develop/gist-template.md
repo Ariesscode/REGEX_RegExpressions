@@ -50,15 +50,24 @@ In this Regex example, you will see an achor tag at the beginning of the express
 ### Quantifiers
 
 ### Grouping Constructs
+One grouping construct used in this expression are non back-referenced symbol which is the "?:", this allows to group the next matched values. For example:
+
+(?:[0-9]{3})
+
+this is creating a 3 didget number between 0 to 9.It will just use the round brackets for grouping that part of the regex without creating a backreference.
 
 ### Bracket Expressions
 We have a few bracket notations in this regex example, bracket notation is quite simalar to the character classes, with a defined set of characters. For example, in this example we have "[1-5][0-9]{14}", thismatches a mastercard starting with 5 and the second digit should be between 1 and 5 [1-5].
 
 ### Character Classes
 Character classes allow you to define characters that will be matched, such as letters or numbers. In this example we are just using numbers, so we use the \d to match any digit between 0 and 9. If we were using letters, it would be defined as follow:
-(a-zA-Z) this allows letters between "a to z" and also the upper case of those letters. In this example we are using bracket notation to define the numeric pattern:
+(a-zA-Z) this allows letters between "a to z" and also the upper case of those letters. In this example we are using bracket notation to define the numeric pattern: The curly braces with the number 14 in between means exaclty 12 numeric characters, each ranging from 0 to 9 will match. 
 
-[0-9]
+[0-9]{12}
+
+Pass: 012345678943
+Failed: 01
+Failed: 0123577
 
 ### The OR Operator
 We compare the two types of card, in this example we have the visa card starting with "4" to identify it as a visa card, then we have the mastercard which is identify with a "5" at the beginning of the regex. The OR operator is used by including "|" symbol between the two types of cards. 
@@ -69,4 +78,4 @@ We compare the two types of card, in this example we have the visa card starting
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Github: https://github.com/Ariesscode/REGEX_RegExpressions/commits/main
