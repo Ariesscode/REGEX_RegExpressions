@@ -20,8 +20,15 @@ American Express:
 Start with 34 or 37 and all have 15-digits. 
 ^3[47][0-9]{13}$
 
-**Note combinging a few examples of regex code for different types of credit cards, if you had a logic statement to see what card is being validated, you can use the  OR operator to scan through all regex and find a match to the type of card being used. 
+**Note combinging a few examples of regex code for different types of credit cards, if you had a logic statement to see what card is being validated, you can use the  OR operator to scan through all regex and find a match to the type of card being used. Example below: 
 
+var acceptedCreditCards = {
+  visa: /^4[0-9]{12}(?:[0-9]{3})?$/,
+  mastercard: /^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$/,
+  amex: /^3[47][0-9]{13}$/,
+  discover: /^65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})$/
+};
+You can add on other brands in the statement. 
 
 ## Table of Contents
 
