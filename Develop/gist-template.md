@@ -76,6 +76,7 @@ We compare the two types of card, in this example we have the visa card starting
 
 ### Flags
 There are no flags added to this expression. Flags affect the behavior of the regex engine that modify the way the pattern is matched. Different programming languages and regex libraries support different set of flags. Here are some examples:
+
 /pattern/i - this flag makes the pattern match case-insensitively. 
 /pattern/g - searches all matches, not just the first found match, think of it as globally. 
 /pattern/m - this flag matches the start and end of each line within a input string 
@@ -83,7 +84,9 @@ There are no flags added to this expression. Flags affect the behavior of the re
  https://www.codeguage.com/courses/regexp/flags
 
 ### Character Escapes
+There are no character escapes included in this regex example. We do not have any literal statements add in the defined expression. Character escapes use back slashes (\) to indicate that a character should be treated literally, rather than a special character. 
 
 ## Author
-
+Abigail Burtley
+Email: abigailtop95@yahoo.com
 Github: https://github.com/Ariesscode/REGEX_RegExpressions/commits/main
