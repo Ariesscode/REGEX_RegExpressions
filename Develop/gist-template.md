@@ -24,13 +24,13 @@ Start with 34 or 37 and all have 15-digits.
 
 var acceptedCreditCards = {
   visa: /^4[0-9]{12}(?:[0-9]{3})?$/,
-  mastercard: /^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$/,
+  mastercard: ^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14})$
   amex: /^3[47][0-9]{13}$/,
   discover: /^65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})$/
 };
 You can add on other brands in the statement. 
 
-Now lets breakdown the mastercard regex code below, please read headings below.
+Now lets breakdown the mastercard/Visa card regex code below, please read headings below.
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ Now lets breakdown the mastercard regex code below, please read headings below.
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
-Mastercard: ^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$
+Mastercard or Visa card: ^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14})$
 ### Anchors
 In this Regex example, you will see an achor tag at the beginning of the expression and a dollar symbol at the end of the expression. The anchor tag (^) matches the starting point of the string. The dollar symbol ($), matches the end point of the string. 
 ### Quantifiers
@@ -52,6 +52,7 @@ In this Regex example, you will see an achor tag at the beginning of the express
 ### Grouping Constructs
 
 ### Bracket Expressions
+We have a few bracket notations in this regex example, bracket notation is quite simalar to the character classes, with a defined set of characters. For example, in this example we have "[1-5][0-9]{14}", thismatches a mastercard starting with 5 and the second digit should be between 1 and 5 [1-5].
 
 ### Character Classes
 Character classes allow you to define characters that will be matched, such as letters or numbers. In this example we are just using numbers, so we use the \d to match any digit between 0 and 9. If we were using letters, it would be defined as follow:
@@ -60,6 +61,7 @@ Character classes allow you to define characters that will be matched, such as l
 [0-9]
 
 ### The OR Operator
+We compare the two types of card, in this example we have the visa card starting with "4" to identify it as a visa card, then we have the mastercard which is identify with a "5" at the beginning of the regex. The OR operator is used by including "|" symbol between the two types of cards. 
 
 ### Flags
 
