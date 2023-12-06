@@ -54,6 +54,10 @@ In this Regex example, you will see an achor tag at the beginning of the express
 ### Bracket Expressions
 
 ### Character Classes
+Character classes allow you to define characters that will be matched, such as letters or numbers. In this example we are just using numbers, so we use the \d to match any digit between 0 and 9. If we were using letters, it would be defined as follow:
+(a-zA-Z) this allows letters between "a to z" and also the upper case of those letters. In this example we are using bracket notation to define the numeric pattern:
+
+[0-9]
 
 ### The OR Operator
 
