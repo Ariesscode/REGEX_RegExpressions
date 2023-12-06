@@ -50,7 +50,9 @@ In this Regex example, you will see an achor tag at the beginning of the express
 ### Quantifiers
 
 ### Grouping Constructs
-One grouping construct used in this expression are non back-referenced symbol which is the "?:", this allows to group the next matched values. For example:
+One grouping construct used in this expression are non back-referenced symbol which is the "?:", this allows to optionally group the next matched values. For example:
+
+4[0-9]{12}(?:[0-9]{3})? - a visacard starting with 4 with 16 digits, optionally follwed by a additional 3 digits
 
 (?:[0-9]{3})
 
