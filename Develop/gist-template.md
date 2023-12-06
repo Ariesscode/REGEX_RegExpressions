@@ -75,6 +75,12 @@ Failed: 0123577
 We compare the two types of card, in this example we have the visa card starting with "4" to identify it as a visa card, then we have the mastercard which is identify with a "5" at the beginning of the regex. The OR operator is used by including "|" symbol between the two types of cards. 
 
 ### Flags
+There are no flags added to this expression. Flags affect the behavior of the regex engine that modify the way the pattern is matched. Different programming languages and regex libraries support different set of flags. Here are some examples:
+/pattern/i - this flag makes the pattern match case-insensitively. 
+/pattern/g - searches all matches, not just the first found match, think of it as globally. 
+/pattern/m - this flag matches the start and end of each line within a input string 
+ **Refer to this link to get more details on other flags:
+ https://www.codeguage.com/courses/regexp/flags
 
 ### Character Escapes
 
