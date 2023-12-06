@@ -46,7 +46,7 @@ Now lets breakdown the mastercard regex code below, please read headings below.
 ## Regex Components
 Mastercard: ^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$
 ### Anchors
-
+In this Regex example, you will see an achor tag at the beginning of the expression and a dollar symbol at the end of the expression. The anchor tag (^) matches the starting point of the string. The dollar symbol ($), matches the end point of the string. 
 ### Quantifiers
 
 ### Grouping Constructs
