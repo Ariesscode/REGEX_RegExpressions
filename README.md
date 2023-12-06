@@ -1,9 +1,18 @@
-# 17 Computer Science for JavaScript: Regex Tutorial (Regular Expressions)
+# Computer Science for JavaScript: Regex Tutorial 
+
+No installation needed.
+
+Gist Link: https://gist.github.com/Ariesscode/856e6db6f75b44005e2f04db6b2c2485
+GitHub Repo: https://github.com/Ariesscode/REGEX_RegExpressions/commits/main
 
 
 ## What Is a Regex?
 
-REGEX or regular expressions in coding is a series of characters of letters, symbols, or numbers that specify a search pattern in a given string of text. For example validators are used to find a required pattern to confirm accesssibilty. REGEX are commonly used to create logical conditions. REGEX are used in common programming languages such as JavaScript, Perl, and PHP. Below I will add different parts of the regular expression and what their duty or meaning is in the expression. Also, checkout the link provided to see my first GIST post created. I will deconstruct an example of a regular expression and explain what it is doing in my gitst template!
+REGEX or regular expressions in coding is a series of characters of letters, symbols, or numbers that specify a search pattern in a given string of text. For example validators are used to find a required pattern to confirm accesssibilty. REGEX are commonly used to create logical conditions. REGEX are used in common programming languages such as JavaScript, Perl, and PHP. Below I will add different parts of the regular expression and what their duty or meaning is in the expression. Also, checkout the link provided to see my first GIST post created. I will deconstruct an example of a regular expression and explain what it is doing in my gist template!
+
+GIST allows you to add code snippets and share with others.
+
+![Gist](images/gist.png)
 
 
 ## User Story
