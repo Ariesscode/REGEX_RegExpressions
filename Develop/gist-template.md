@@ -30,6 +30,8 @@ var acceptedCreditCards = {
 };
 You can add on other brands in the statement. 
 
+Now lets breakdown the mastercard regex code below, please read headings below.
+
 ## Table of Contents
 
 - [Anchors](#anchors)
