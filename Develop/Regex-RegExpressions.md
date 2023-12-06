@@ -48,6 +48,10 @@ Mastercard or Visa card: ^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14})$
 ### Anchors
 In this Regex example, you will see an achor tag at the beginning of the expression and a dollar symbol at the end of the expression. The anchor tag (^) matches the starting point of the string. The dollar symbol ($), matches the end point of the string. 
 ### Quantifiers
+^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14})$
+Quatifiers are used in this regex example. Quantifiers are identified by using {} curly braces to indicate that a group of digits should occur a specific amount of times. For example :
+
+{12} and {14}: Specifies that the preceding character or group ([0-9] in this case) must occur exactly 12 times (visacard) or 14 times for the mastercard . This is used after the 4 to ensure there are 12 digits following it. The same for the " {3}, but this is optionally added  digits.
 
 ### Grouping Constructs
 One grouping construct used in this expression are non back-referenced symbol which is the "?:", this allows to optionally group the next matched values. For example:
